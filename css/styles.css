@@ -10,6 +10,7 @@
   --background-button-color-blu: #188ce8;
   --border-color: #ececec;
   --border-color-card: #eeeeee;
+  --background-icon-color: #f5f4fa;
 }
 
 body {
@@ -115,6 +116,10 @@ ul {
   margin-right: 50px;
 }
 
+.envelope {
+  fill: currentColor;
+}
+
 .site-nav .grey {
   color: var(--primary-grey-text);
   font-weight: 500;
@@ -188,6 +193,22 @@ ul {
   display: flex;
 }
 
+.background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  background-color: var(--background-icon-color);
+  width: 270px;
+  height: 120px;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+}
+
 .title-section {
   margin-bottom: 10px;
 
@@ -248,7 +269,7 @@ img {
 
 .container-section-team {
   display: flex;
-  }
+}
 
 .hero-section-team {
   margin-bottom: 50px;
