@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Шапка сайту -->
+    <header class="header">
+      <!--Навігація-->
+      <div class="container header-container">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-two">Studio</span>
+        </a>
+        <nav>
+          <ul class="site-nav flex">
+            <li class="item-site-nav">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="item-site-nav">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item-site-nav"><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="site-nav flex-grey">
+          <li class="item-site-grey">
+            <a href="mailto:info@devstudio.com" class="link grey"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item-site-grey">
+            <a href="tel:+380961111111" class="link grey">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Головна -->
+    <main>
+      <!-- Шапка -->
+      <section class="section-hero">
+        <div class="container container-hero">
+          <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button">Замовити послугу</button>
+        </div>
+      </section>
+      <!-- Особливості-->
+      <section class="section">
+        <h2 hidden>Особливості</h2>
+        <div class="container">
+          <ul class="section-container">
+            <li class="section-container-flex">
+              <h3 class="title-section">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p>
+                Ідейн міркування,і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="section-container-flex">
+              <h3 class="title-section">ПУНКТУАЛЬНІСТЬ</h3>
+              <p>
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе
+              </p>
+            </li>
+            <li class="section-container-flex">
+              <h3 class="title-section">ПЛАНУВАННЯ</h3>
+              <p>
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="section-container-flex">
+              <h3 class="title-section">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Чим ми займаємося -->
+      <section class="section-work">
+        <div class="container">
+          <h2 class="title-section-work">Чим ми займаємося</h2>
+          <ul class="container-section-work">
+            <li class="section-work-flex">
+              <img src="./image/img.jpg" alt="image" width="370" />
+            </li>
+            <li class="section-work-flex">
+              <img src="./image/img-1.jpg" alt="image-1" width="370" />
+            </li>
+            <li class="section-work-flex">
+              <img src="./image/img-2.jpg" alt="image-2" width="370" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Наша команда -->
+      <section class="section-team">
+        <div class="container">
+          <h2 class="hero-section-team">Наша команда</h2>
+          <ul class="container-section-team">
+            <li class="section-team-flex">
+              <img src="./image/photo.jpg" alt="photo" width="270" />
+              <div class="card-team">
+                <h3 class="title-section-team">Ігор Дем'яненко</h3>
+                <p class="item-section-team-flex">Product Designer</p>
+              </div>
+            </li>
+            <li class="section-team-flex">
+              <img src="./image/photo1.jpg" alt="photo1" width="270" />
+              <div class="card-team">
+                <h3 class="title-section-team">Ольга Рєпіна</h3>
+                <p class="item-section-team-flex">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="section-team-flex">
+              <img src="./image/photo2.jpg" alt="photo2" width="270" />
+              <div class="card-team">
+                <h3 class="title-section-team">Микола Тарасов</h3>
+                <p class="item-section-team-flex">Marketing</p>
+              </div>
+            </li>
+            <li class="section-team-flex">
+              <img src="./image/photo3.jpg" alt="photo3" width="270" />
+              <div class="card-team">
+                <h3 class="title-section-team">Михайло Єрмаков</h3>
+                <p class="item-section-team-flex">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="logo footer-flex"
+          >Web<span class="logo-three">Studio</span>
+        </a>
+        <address>
+          <ul class="contacts container-footer">
+            <li class="item-container-footer">
+              <a
+                href="https://goo.gl/maps/tXM1PvSKnXk6XvrT7"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="address link"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="item-container-footer">
+              <a href="mailto:info@devstudio.com" class="contact link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item-container-footer">
+              <a href="tel:++380961111111" class="contact link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
