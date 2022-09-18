@@ -1,7 +1,6 @@
 :root {
   --primary-grey-text: #757575;
   --primary-white-color: #ffffff;
-  --blu-color: #2196f3;
   --accent-blu-color: #2196f3;
   --secondary-black-color: #212121;
   --black-color: #000000;
@@ -13,8 +12,7 @@
   --border-color-card: #eeeeee;
   --background-icon-color: #f5f4fa;
   --icon-color: #afb1b8;
-  --icon-border-color: #afb1b8;
-}
+  }
 
 body {
   color: var(--primary-grey-text);
@@ -54,6 +52,7 @@ ul {
 /* Header logo */
 .header {
   border-bottom: 1px solid var(--border-color);
+  outline: 2px solid;
 }
 
 .header-container {
@@ -68,8 +67,8 @@ ul {
   margin-top: 24px;
   margin-bottom: 25px;
 
+  color: var(--accent-blu-color);
   text-decoration: none;
-  color: var(--blu-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -83,25 +82,30 @@ ul {
 /* Header sate nav */
 
 .site-nav .link.current {
-  color: var(--blu-color);
+  color: var(--accent-blu-color);
 }
 
 .site-nav a {
-  display: block;
+  display: flex;
 
   color: var(--secondary-black-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.site-nav .link {
+/* .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+} */
+.item-site-nav,
+.item-site-grey {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .item-site-nav:not(:last-child) {
   margin-right: 50px;
 }
@@ -112,28 +116,35 @@ ul {
 
 .site-nav.flex-grey {
   display: flex;
+  align-items: center;
   margin-left: auto;
+  background-color: aquamarine;
 }
 
 .item-site-grey:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
-/* .envelope {
-  fill: currentColor;
-} */
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
 
 .site-nav .grey {
   color: var(--primary-grey-text);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--blu-color);
+  color: var(--accent-blu-color);
 }
 
 /* Main */
@@ -165,11 +176,11 @@ ul {
   display: block;
   padding: 10px 32px;
   border-radius: 4px;
-  border-color: var(--blu-color);
+  border-color: var(--accent-blu-color);
   margin-right: auto;
   margin-left: auto;
 
-  background: var(--blu-color);
+  background: var(--accent-blu-color);
   color: var(--primary-white-color);
   cursor: pointer;
   font-family: inherit;
@@ -287,7 +298,6 @@ img {
 }
 .section-team-flex {
   width: calc((100%-90px) / 4);
-
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -304,7 +314,6 @@ img {
 
 .title-section-team {
   margin-bottom: 10px;
-
   color: var(--secondary-black-color);
   font-weight: 500;
   font-size: 16px;
@@ -314,7 +323,6 @@ img {
 }
 .item-section-team-flex {
   display: block;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -351,7 +359,7 @@ img {
 
 .icon-link-team:hover,
 .icon-link-team:focus {
-  background-color: var(--blu-color);
+  background-color: var(--accent-blu-color);
   border-radius: 30px;
   fill: var(--primary-white-color);
 }
@@ -384,21 +392,21 @@ img {
   justify-content: center;
   align-items: center;
   width: 170px;
-  height:92px;
+  height: 92px;
   padding: 16px 32px;
-  border: 1px solid var(--icon-border-color);
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
-  }
+}
 
- .icon-link-clients:hover > svg,
- .icon-link-clients:focus > svg {
+.icon-link-clients:hover > svg,
+.icon-link-clients:focus > svg {
   fill: var(--accent-blu-color);
- } 
+}
 
- .icon-link-clients:hover,
- .icon-link-clients:focus {
+.icon-link-clients:hover,
+.icon-link-clients:focus {
   border-color: var(--accent-blu-color);
- }
+}
 
 .item-icon-clients {
   fill: var(--icon-color);
@@ -449,7 +457,7 @@ img {
 
 .contacts .link:hover,
 .contacts .link:focus {
-  color: var(--blu-color);
+  color: var(--accent-blu-color);
 }
 
 /* ------------------------------Page Portfolio --------------------------- */
@@ -486,7 +494,7 @@ img {
 
 .button-nav:hover,
 .button-nav:focus {
-  background-color: var(--blu-color);
+  background-color: var(--accent-blu-color);
   color: var(--primary-white-color);
 }
 
