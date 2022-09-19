@@ -492,7 +492,7 @@ img {
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ------------------------------Page Portfolio --------------------------- */
@@ -531,6 +531,7 @@ img {
 .button-nav:focus {
   background-color: var(--accent-blu-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .item-buttons-container {
@@ -572,9 +573,14 @@ img {
   flex-basis: calc((100%-60px) / 3);
   max-width: 370px;
   border: 1px solid var(--border-color-card);
+}
+
+.card-project:hover,
+.card-project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .projects-flex {
   display: flex;
   flex-wrap: wrap;
