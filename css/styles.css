@@ -79,7 +79,7 @@ ul {
   color: var(--black-color);
 }
 
-/* Header sate nav */
+/* Header Navigation */
 
 .site-nav .link.current {
   color: var(--accent-blu-color);
@@ -145,7 +145,7 @@ ul {
 
 /* Main */
 
-/* section-hero */
+/* Hero */
 
 .section-hero {
   max-width: 1600px;
@@ -203,7 +203,7 @@ ul {
   background-color: var(--background-button-color-blu);
 }
 
-/* section*/
+/* about Us*/
 
 .section {
   padding-top: 94px;
@@ -247,7 +247,7 @@ ul {
 .section-container-flex:not(:last-child) {
   margin-right: 30px;
 }
-/* section-work */
+/* Work */
 
 .section-work {
   padding-bottom: 94px;
@@ -280,7 +280,7 @@ img {
   margin-right: 30px;
 }
 
-/* section-team */
+/* Team */
 
 .section-team {
   max-width: 1600px;
@@ -317,8 +317,7 @@ img {
   margin-right: 30px;
 }
 .card-team {
-  padding: 30px 0 0 0;
-  margin-bottom: 16px;
+  padding: 30px 0;
 }
 
 .title-section-team {
@@ -332,16 +331,13 @@ img {
 }
 .item-section-team-flex {
   display: block;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-grey-text);
-}
-
-.icon-team {
-  padding-bottom: 30px;
 }
 
 .icon-team.networks {
@@ -356,8 +352,10 @@ img {
 
 .icon-link-team {
   display: flex;
-  padding: 12px;
-
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
   fill: var(--icon-color);
 }
 
@@ -368,12 +366,12 @@ img {
 
 .icon-link-team:hover,
 .icon-link-team:focus {
-  background-color: var(--accent-blu-color);
   border-radius: 30px;
+  background-color: var(--accent-blu-color);
   fill: var(--primary-white-color);
 }
 
-/* section-clients */
+/* Clients */
 
 .section-clients {
   padding-top: 94px;
@@ -397,12 +395,11 @@ img {
   margin-right: 30px;
 }
 .icon-link-clients {
+  width: 170px;
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
@@ -495,7 +492,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ------------------------------Page Portfolio --------------------------- */
+/* ------------Page Portfolio --------------- */
 
 /* Buttons */
 .section-projects {
@@ -531,7 +528,8 @@ img {
 .button-nav:focus {
   background-color: var(--accent-blu-color);
   color: var(--primary-white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .item-buttons-container {
@@ -545,7 +543,6 @@ img {
 
 /* Projects */
 
-/* Main */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
